@@ -1,8 +1,8 @@
 # au
 
-Array Utils (`au) are a collection of various functional-esque Lua functions for interacting with collections.
+Array Utils (`au`) are a collection of various functional-esque Lua functions for interacting with collections.
 
-Many of these behave `immutably` which will increase your usage of tables. Make sure not to use these in too many loops.
+Many of these behave `immutably` which isn't the best in Lua. Using functions that return tables will increase your memory usage, and make the GC work hard. Make sure not to use these in too many loops.
 
 If using in LuaJIT, then watch out for those functions that state that they use NYI functionality, such as `pairs` or `next`.
 
